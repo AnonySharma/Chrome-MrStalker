@@ -8,7 +8,7 @@ function revealNames(handleMap) {
 	for (var i = 0; i < links.length; i++) {
 		var link = links[i];
 		var href = link.getAttribute("href");
-		if (href.indexOf("/profile/") == 0) {
+		if (href?.indexOf("/profile/") == 0) {
 			users.push(link);
 		}
 	}

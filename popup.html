@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mr. Stalker</title>
+		<link rel="stylesheet" type="text/css" href="popup.css" />
+		<script src="popup.js"></script>
+	</head>
+	<body>
+		<div style="min-width: 250px; text-align: center">
+			<div id="home" style="display: block">
+				<h2>Mr. Stalker</h2>
+				<p>
+					<img src="./icons/mrstalker-128.png" alt="Mr. Stalker" />
+				</p>
+				<p>
+					<label for="handle">Handle:</label>
+					<input type="text" id="handle" name="handle" />
+				</p>
+				<p>
+					<label for="nickname">Nickname:</label>
+					<input type="text" id="nickname" name="nickname" />
+				</p>
+				<p>
+					<button id="saveToHandleMap">Save</button>
+				</p>
+				<div style="display: flex; justify-content: space-between">
+					<button id="go-to-options" style="display: none; background-color: rgb(179, 238, 240)">Options</button>
+					<button class="toggleList" style="background-color: rgb(179, 238, 240)">See Nickname List</button>
+					<button id="clearHandleMap" style="background-color: red">Clear Storage</button>
+				</div>
+				<p>You'll have to refresh the page to see the changes.</p>
+			</div>
+			<div id="listNames" style="display: none; text-align: center">
+				<button class="toggleList" style="background-color: rgb(179, 238, 240)">Go back</button>
+				<table class="mr-stalker-list" style="width: 100%; margin-top: 10px">
+					<thead>
+						<tr>
+							<th>Handle</th>
+							<th>Nickname</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Table rows will be added here -->
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

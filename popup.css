@@ -1,0 +1,24 @@
+.mr-stalker-list {
+	text-align: center;
+	font-family: sans-serif;
+	border-collapse: collapse;
+}
+
+.mr-stalker-list th {
+	background-color: #404040;
+	color: white;
+}
+
+.mr-stalker-list th,
+.mr-stalker-list td {
+	border: 1px solid #eee;
+	padding: 8px;
+}
+
+.mr-stalker-list tr:nth-child(even) {
+	background: #efefef;
+}
+
+.mr-stalker-list tr:hover {
+	background: #d1d1d1;
+}
